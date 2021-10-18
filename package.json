@@ -1,0 +1,22 @@
+{
+  "name": "bina-repuesto",
+  "version": "1.0.0",
+  "description": "pagina web de bina deco",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danimastandrea/binadeco.git"
+  },
+  "author": "dani mastandrea/ <dvmastandrea@gmail.com/>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danimastandrea/binadeco/issues"
+  },
+  "homepage": "https://github.com/danimastandrea/binadeco#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

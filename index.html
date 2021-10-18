@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>         Bina Deco         </title>
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+    <!--link a bootstrap-->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--link a css-->     
+        <link rel="stylesheet" href="./sass/style.css"> 
+  <!-- seo -->  
+  <meta name="description" content="Bina Deco, handmade deco">
+  <meta name="keywords" content="decoración, hogar, velas, percheros">
+</head>
+<body>
+    
+
+        <header class="encabezado">
+            <h1 class="headerTitulo">BINA DECO</h1>
+           
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#"></a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                                             
+                              <li class="nav-item">
+                                <a class="nav-link" href="./index.html">INICIO</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./html/handmade.html">HANDMADE</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./html/contactoBina.html">CONTACTO</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  PRODUCTOS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="./html/productoBina.html">TODO</a></li>
+                                  <li><a class="dropdown-item" href="./html/velas.html">VELAS</a></li>
+                                  <li><a class="dropdown-item" href="./html/lamparas.html">LAMPARAS</a></li>
+                                  
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+        </header>
+    
+   
+
+
+
+    <section class="sectionHistoria">
+      
+        <article class="historia__article">
+          <h2 class="historia__article--titulo"> Quienes somos?</h2>
+          <p class="historia__article--parrafo">
+            Somos un emprendimiento en pareja que nació poco antes de la pandemia, cuando decidimos mudarnos juntos. Ambos inquietos comenzamos a decorar nuestro lugar diseñando y creando objetos, así nació Bina.
+          </p>
+            
+        </article>
+        
+        <div class="imagen__historia">
+            <img   src="./assets/BINA.png"  width="200" height="250"
+             alt="logo" loading="lazy">
+                       
+        </div>     
+        
+        
+    </section>
+
+
+<section class="banner2">
+  <img src="./assets/pexels-cottonbro-4273425.jpg" class="img-fluid" alt="imagen banner">
+</section>
+
+
+
+
+
+<div class="Promociones">
+  
+    <section>
+          <article class="promociones__article" >
+            <p class="promociones__article--parrafo"> P R O M O C I O N E S</p>
+          </article>
+    </section>
+</div>      
+<!-- CARRUSEL DE FOTOS -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./assets/promociones.jpg" class="d-block w-100"  alt="imagen promociones">
+        </div>
+        <div class="carousel-item">
+            <img src="./assets/productopromo.jpg" class="d-block w-100" alt="imagen productos descuento">
+        </div>
+        
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+
+<div class="pieDePagina">
+  
+  <footer class="footer">
+    <div class="footer__div">
+      <img class="icon" src="./assets/telephone.svg" alt="">
+      <h4 class="footer__titulo">C O N T A C T O</h4>
+      <a class="footerlinks" href="bina.deco@gmail.com">bina.deco@gmail.com</a>
+      <p class="footerlinks">Av. San Martin 1500</p>
+    </div>
+    <div class="footer__div">
+      <img class="icon" src="./assets/truck.svg" alt="">
+      <h4 class="footer__titulo">E N V I O S</h4>
+      <p class="footerlinks">Por ANDREANI a todo el país</p>
+      <p class="footerlinks"> Dentro de CABA gratis</p>
+    </div>
+    <div class="footer__div">
+      <img class="icon" src="./assets/credit-card-2-back.svg" alt="">
+      <h4 class="footer__titulo"> P A G O S</h4>
+      <p class="footerlinks">Efectivo, Tarjetas o Mercado Pago</p>
+      
+    </div>
+  </footer>
+  
+</div>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

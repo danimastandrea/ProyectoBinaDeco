@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contactanos!</title>
+<!-- link google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+<!--link a bootstrap-->
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<!--link a css-->     
+    <link rel="stylesheet" href="../sass/style.css">  
+<!-- seo -->  
+<meta name="description" content="Bina Deco, handmade deco">
+<meta name="keywords" content="decoración, hogar, velas, percheros">
+</head>
+<body> 
+    
+  <header class="encabezado">
+    <h1 class="headerTitulo">BINA DECO</h1>
+   
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                                                     
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../html/handmade.html">HANDMADE</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../html/contactoBina.html">CONTACTO</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          PRODUCTOS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../html/productoBina.html">TODO</a></li>
+                          <li><a class="dropdown-item" href="../html/velas.html">VELAS</a></li>
+                          <li><a class="dropdown-item" href="../html/lamparas.html">LAMPARAS</a></li>
+                          
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+</header>
+    <section class="contactoSection">
+      <h1 class="contacto__titulo">CONTACTO</h1>
+      
+      
+      <div class="contacto__div" >
+
+            <ul class="contactoUl">
+                <li class="contactoLi">
+                    
+                    <a class="contactoLink" href="bina.deco@gmail.com">bina.deco@gmail.com</a>
+                    
+                    <a class="contactoLink" href="https://api.whatsapp.com/send?phone=+5492226555531&amp;text=Hola!%20Me%20gustaria%20recibir%20m%C3%A1s%20informaci%C3%B3n.">2226-555531</a>
+                    
+                    <a class="contactoLink" href="https://www.instagram.com/bina.deco/">@bina.deco</a>
+              <br> 
+                </li>
+            </ul>
+        </div>
+           
+            
+            
+            
+            <form class="formularioSuscribirse" action="GET">
+              
+                <input type="text"name="Nombre"placeholder="nombre" required>
+                <input type="mail"name="correoElectrónico"placeholder="xxx@xxx.com"required>
+                <input type="tel" name="Teléfono" >
+                <select name="combo" id="">
+                    <option value="1">tel</option>
+                    <option value="2">cel</option>
+                </select>
+
+                <div class="botones">    
+                  <button type="reset"  class="btn btn-outline-secondary">Borrar</button>   
+                  <button type="submit"  class="btn btn-outline-secondary">Enviar</button>          
+                  
+                  
+                </div>
+            </form>
+
+            <div class="labelcheck">
+              <label class="labelForm" for="acepta">¿Desea recibir más novedades?</label>
+              <input  type="checkbox" name="acepta" value="1" /> 
+            </div>
+        
+    </section>
+
+    <section class="banner">
+      <img src="../assets/pexels-cottonbro-4273436.jpg" class="img-fluid" alt="...">
+    </section>
+
+    <div class="pieDePagina">
+  
+      <footer class="footer">
+        <div class="footer__div">
+          <img class="icon" src="../assets/telephone.svg" alt="">
+          <h4 class="footer__titulo">C O N T A C T O</h4>
+          <a class="footerlinks" href="bina.deco@gmail.com">bina.deco@gmail.com</a>
+          <p class="footerlinks">Av. San Martin 1500</p>
+        </div>
+        <div class="footer__div">
+          <img class="icon" src="../assets/truck.svg" alt="">
+          <h4 class="footer__titulo">E N V I O S</h4>
+          <p class="footerlinks">Por ANDREANI a todo el país</p>
+          <p class="footerlinks"> Dentro de CABA gratis</p>
+        </div>
+        <div class="footer__div">
+          <img class="icon" src="../assets/credit-card-2-back.svg" alt="">
+          <h4 class="footer__titulo"> P A G O S</h4>
+          <p class="footerlinks">Efectivo, Tarjetas o Mercado Pago</p>
+          
+        </div>
+      </footer>
+      
+    </div>
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

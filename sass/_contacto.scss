@@ -1,0 +1,164 @@
+.contacto__titulo{
+    color: $colorfontgeneral ;
+    font-size: 3.1rem;
+ font-weight: 300;
+ font-family: $binafont;
+ margin-left: 3.1rem;
+ margin-top: 1.8rem;
+ }
+
+ 
+ .contactoSection{
+   
+    display: flex;
+    flex-direction: row;
+    background-color: $bgsection;
+    margin-top: 4.3rem;
+    margin-bottom: 8rem;
+    
+
+    .contacto__div {
+  
+       text-align: center;      
+       margin-top: 4.6rem;
+       margin-bottom: 4.5rem;       
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       
+
+       .contactoLink {
+        margin-bottom: 2rem;
+        text-decoration: none;
+        color: $colorfontgeneral;
+        font-size: 1.2rem;
+        font-weight: 300;
+        font-family: $binafont;
+        
+        
+        }    
+      }
+      
+  
+        .formularioSuscribirse{ 
+         transition: all 2s;
+         width: 6.25rem;
+         margin: auto;
+         text-align: center;
+         margin-right: 9.3rem;
+         
+                       
+               .formularioSuscribirse input:focus{
+                  width: 9.3rem;
+                  font-size: 1.25rem;
+               }  
+               
+               
+              .botones{
+                 display: flex;
+                 flex-direction: row;
+                 margin-top: 15px;
+              } 
+             .btn {
+              background-color: #CCB3A3;
+             }  
+               
+               
+               
+               
+            }
+            .labelcheck{
+               display: flex;
+               flex-direction: column;
+               margin-right: 1.8rem;
+               margin-top: 4rem;
+
+               .labelForm{
+                  color: darkslategray;
+                  font-size: 15px;
+                  font-size: 20px;
+                  font-family: 'Benne', serif;
+                  margin-right: 5px;
+                  
+               }                  
+              
+            }    
+            
+          }      
+          .banner{
+            .img-fluid{
+              margin-top: 30px;
+              width: 100%;
+              height: 18rem;
+            }
+          }         
+    
+    
+    /*Mobile Styles */
+ @media only screen and (max-width: 400px){
+    
+    .contactoSection{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+     .contacto__titulo{
+       margin-left: 0rem;
+       font-size: 2rem;
+     }
+     .contactoUl{
+       width: 40%;
+       margin-bottom: 7%;
+      
+     }
+     .formularioSuscribirse{
+       width: 39%;
+       margin-top: 0%;
+     }
+     .labelcheck{
+       margin-bottom: 8%;
+     }
+    }
+
+    .banner{
+     
+      .img-fluid{
+       
+        height: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        
+       
+      }
+    }
+ }
+
+ /* Tablet Styles */
+ @media only screen and (min-width: 401px) and (max-width: 960px){
+   .contactoSection{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+     .contacto__titulo{
+       margin-left: 0rem;
+     }
+     .contactoUl{
+       width: 40%;
+       margin-bottom: 7%;
+      
+     }
+     .formularioSuscribirse{
+       width: 39%;
+       margin-top: 0%;
+     }
+     .labelcheck{
+       margin-bottom: 8%;
+     }
+    }
+ }
+   
+     
+      

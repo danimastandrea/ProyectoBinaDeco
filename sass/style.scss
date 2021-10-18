@@ -1,0 +1,34 @@
+/* VARIABLES*/
+$bordercolor: rgb(255, 255, 255);
+$binafont: 'Benne', serif;
+$binafontsize: $binafont - 1px;
+$bgbody:#EEEDE8 ;
+$bgsection: #E5D7C4 ;
+$colorfontgeneral: darkslategray;
+$heightpics: 22rem;
+$widthpics: 15rem;
+
+/*$bgbody: #FBFCFC;*/
+/*$bgsection: #F6F2E9;*/
+/* import secciones scss */ 
+@import "header";
+@import "bodyindex";
+@import "contacto";
+@import "productos";
+@import "handmade";
+@import "footer";
+
+
+
+body{
+         background-color:$bgbody ;
+          padding: 10px;
+         }
+
+
+
+ 
+
+
+
+ 

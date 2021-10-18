@@ -1,0 +1,244 @@
+.sectionProd {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-color: $bgsection;
+    
+    
+    .articleProd{       
+       justify-content: space-around;
+       flex-direction: column-reverse;
+       text-align: center;
+       border-radius: 1.2rem;
+       border-color: $bordercolor;
+       border-style: solid;
+       border-width: 0.1rem;  
+       
+       .btn {
+          background-color: #CCB3A3;
+       }
+       
+    
+       .imagenProducto img{
+         width: $widthpics; 
+         height: $heightpics;             
+         transition: all 2s;
+         
+         
+       }
+       
+        .imagenProducto img:hover {
+            width: 20rem;
+            height: 29rem;
+           padding: 1.25rem;
+           
+        }
+        .descripcionProducto{
+           margin-top: 1.25rem;
+           font-family: $binafont;
+           font-size: 1.2rem;
+           color:$colorfontgeneral;
+           
+        }
+    }
+}
+
+
+  
+   /* SUBMENU velas y lamparas*/ 
+  
+   .section__velas{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 3.1rem;
+      background-color: $bgsection;
+      border-color: $bordercolor;
+  border-style: solid;
+  border-width: 0.1rem;  
+
+
+      .article__velas{
+         border-radius: 1.25rem;
+       border-color: $bordercolor;
+       border-style: solid;
+       border-width: 2px;  
+       
+         .imagenvela {
+            width: $widthpics;
+            height: $heightpics;
+            transition: all 2s;
+         }
+         .imagenvela:hover{
+            padding: 1.25rem;
+            width: 21.8rem;
+            height: 28.1rem;
+
+         }
+         
+
+         .nombrevela{
+            font-family: $binafont;
+            font-size: 1.25rem;
+            justify-content: center;
+            margin-top: 1.25rem;
+            justify-items: center;
+            display: flex;
+         }
+      }
+   }
+
+   .sectiontabla{
+      margin-top: 5rem;
+      margin-bottom: 2.5rem;
+      background-color: $bgsection; 
+      
+    
+      .tablaProducto   {
+     font-family: $binafont;
+     font-style: italic;
+     font-size: 15px;
+     margin-left: 65px;
+     
+     
+  
+     
+    }
+     }
+
+     /*Mobile Styles */
+ @media only screen and (max-width: 400px) {
+        
+      .sectionProd{
+         display: flex;     
+         flex-direction: column;
+         text-align: center;
+      
+      .articleProd{  
+         
+        
+              
+      
+         .imagenProducto img{
+           width: 85%;              
+           transition: all 2s;
+           
+           
+         }
+         
+          .imagenProducto img:hover {
+              width: 100%;
+              
+             
+          }
+          .descripcionProducto{
+             margin-top: 1.25rem;
+             font-family: $binafont;
+             font-size: $binafontsize;
+             
+          }
+       }
+       
+   }
+   /*velas y lámparas*/ 
+   .section__velas{   
+      display: flex;     
+      flex-direction: column;
+      text-align: center;
+   
+      
+
+      .article__velas{
+         border-radius: 1.2rem;
+       border-color: $bordercolor;
+       border-style: solid;
+       border-width: 0.1rem; 
+
+       
+         .imagenvela {
+            width: 85%;            
+            transition: all 2s;
+         }
+         .imagenvela:hover{
+            padding: 1.2rem;
+            width: 100%;
+
+         }
+         
+
+         .nombrevela{           
+            font-size: 1.2rem;          
+            margin-top: 1.2rem;
+           
+         }
+          }
+           }
+           .tablaProducto   {
+           display: none;         
+                     
+         
+            
+           }
+ }
+
+ /* Tablet Styles */
+ @media only screen and (min-width: 401px) and (max-width: 960px){
+   .sectionProd{
+      display: flex;     
+      flex-direction: column;
+      text-align: center;
+   
+   .articleProd{             
+   
+      .imagenProducto img{
+        width: 85%;              
+        transition: all 2s;
+        
+         }
+      
+       .imagenProducto img:hover {
+           width: 100%;
+           
+          
+       }
+       .descripcionProducto{
+          margin-top: 1.25rem;
+          font-family: $binafont;
+          font-size: $binafontsize;
+          
+       }
+    }
+}
+/*velas y lámparas*/ 
+.section__velas{   
+   display: flex;     
+   flex-direction: column;
+   text-align: center;
+
+   
+
+   .article__velas{
+      border-radius: 1.2rem;
+    border-color: $bordercolor;
+    border-style: solid;
+    border-width: 0.1rem; 
+    
+      .imagenvela {
+         width: 85%;            
+         transition: all 2s;
+      }
+      .imagenvela:hover{
+         padding: 1.2rem;
+         width: 100%;
+
+      }
+      .nombrevela{
+        
+         font-size: 1.2rem;       
+         margin-top: 1.2rem;
+        
+      }
+       }
+        }
+ }

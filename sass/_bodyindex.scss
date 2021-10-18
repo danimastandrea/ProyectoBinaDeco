@@ -1,0 +1,163 @@
+.sectionHistoria {
+  display: flex;
+  flex-direction: row-reverse; 
+  border-color: $bordercolor;
+  border-style: solid;
+  border-width: 2px;  
+  background-color: $bgsection;
+  margin-top: 3.1rem;
+  margin-bottom: 70px;
+
+  .historia__article {
+    margin-top: 20px;
+    margin-left: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    color: $colorfontgeneral;
+   
+    .historia__article--titulo {
+      font-family: $binafontsize;
+      font-style: oblique;
+      text-align: center;
+      font-weight: lighter;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      
+    }
+    .historia__article--parrafo{
+      font-family: $binafontsize;
+      font-style: oblique;
+      text-align: center;
+      font-weight: lighter;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      
+    }
+  }
+
+  .imagen__historia {
+    margin-top: 20px;
+    margin-left: 20px;
+   
+    margin-bottom: 20px;
+  }
+}
+
+
+.banner2{
+  .img-fluid{
+    margin-top: 30px;
+    width: 100%;
+    height: 20rem;
+  }
+}
+.Promociones {
+  margin-top: 7.5rem;
+  margin-bottom: 7rem;
+  border-color: $bordercolor;
+  border-style: solid;
+  border-width: 2px;  
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: $bgsection;
+ 
+   .promociones__article{
+     display: flex;
+     justify-content: center;
+     font-family: $binafont;
+     font-size: 30px;
+     text-align: center;
+     font-weight: lighter;
+     color: $colorfontgeneral;
+     
+    }
+  
+}
+
+.carousel-item {
+  width: 100%;
+  height: 500px;
+ 
+}
+/* modificacion mapa de carrusel*/ 
+$white: darkslategray;
+$carousel-control-color: (
+    "white": $white
+);
+
+
+/*Mobile Styles */
+@media only screen and (max-width: 400px) {
+   
+  section {
+   width: 100%;
+   height: 100% ;
+  }
+  .sectionHistoria{
+    .historia__article--parrafo{
+      font-size: 85%;
+      margin-right: 20%;
+    }
+    .imagen__historia{
+      margin-top: 40%;
+    }
+    
+ }
+  .banner2{
+    .img-fluid{                
+      width: 100%;
+      height: 4rem;
+      margin-top: 0.7rem;
+      margin-bottom: 0.1rem;
+    }
+
+      }
+      .Promociones{
+        margin-bottom: 3rem;
+        margin-top: 3rem; 
+      }
+      .promociones__article--parrafo {
+        font-size: 75%;    
+      }
+  .carousel-item{
+    margin-bottom: 10%;
+  }    
+   
+  
+}
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+section {
+  width: 100%;
+  height: 100% ;
+ }
+ .sectionHistoria{
+
+   .historia__article--parrafo{
+     font-size: 85%;
+     margin-right: 20%;
+   }
+   .imagen__historia{
+     margin-top: 40%;
+   }
+ }
+
+
+}
+
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+ body {
+ background-color: #FBFCFC;
+ }
+}
+
+

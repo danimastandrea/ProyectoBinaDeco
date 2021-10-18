@@ -1,0 +1,75 @@
+   .footer{
+      background-color: $bgsection;
+      height: 10rem;
+      width: 83rem;
+      margin-top: 5rem;
+      display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+
+     
+        .footer__div{
+         
+           .footer__titulo{
+              font-size: 0.9rem;
+              font-weight: 600;              
+              font-family: $binafont;
+              margin-top: 1.5rem;
+              color: $colorfontgeneral;
+            }
+            .footerlinks{
+               color: $colorfontgeneral;
+               font-size: 0.7rem;
+               font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+              text-decoration: none;
+              font-weight: 600;
+
+            }
+            
+             .icon{
+                width: 1.7rem;
+                height: 1.7rem;
+                margin-left: 1.2rem;
+                margin-top: 1.3rem;
+             }
+         } 
+
+
+}
+
+
+/*Mobile Styles */
+@media only screen and (max-width: 400px){
+   .footer{
+      width: 100%;
+      margin-top: 1rem;
+      .footer__div{
+        width: 27%;        
+        margin-bottom: 5%;
+        .footer__titulo{
+           font-size: 60%;
+        }
+        .footerlinks{
+           font-size: 50%;
+        }
+      }
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px){
+   .footer{
+      width: 100%;
+      
+      .footer__div{
+        width: 27%;        
+        margin-bottom: 5%;
+        .footer__titulo{
+           font-size: 60%;
+        }
+        .footerlinks{
+           font-size: 50%;
+        }
+      }
+    }
+}
