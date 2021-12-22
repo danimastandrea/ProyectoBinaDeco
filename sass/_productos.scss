@@ -17,6 +17,7 @@
        
        .btn {
           background-color: #CCB3A3;
+          margin-bottom: 0.5rem;
        }
        
     
@@ -24,6 +25,7 @@
          width: $widthpics; 
          height: $heightpics;             
          transition: all 2s;
+         border-radius: 1.25rem;
          
          
        }
@@ -69,6 +71,7 @@
             width: $widthpics;
             height: $heightpics;
             transition: all 2s;
+            border-radius: 1.25rem;
          }
          .imagenvela:hover{
             padding: 1.25rem;
