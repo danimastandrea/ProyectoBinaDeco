@@ -2,8 +2,8 @@
 $bordercolor: rgb(255, 255, 255);
 $binafont: 'Benne', serif;
 $binafontsize: $binafont - 1px;
-$bgbody:#EEEDE8 ;
-$bgsection: #E5D7C4 ;
+$bgbody:#fff ;
+$bgsection: #C9C7AD ;
 $colorfontgeneral: darkslategray;
 $heightpics: 22rem;
 $widthpics: 15rem;
@@ -22,7 +22,7 @@ $widthpics: 15rem;
 
 body{
          background-color:$bgbody ;
-          padding: 10px;
+          
          }
 
 
