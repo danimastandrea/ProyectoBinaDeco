@@ -141,7 +141,7 @@ li li {
 }
 
 .prueba a .card__shop {
-  background-image: url(./assets/descarga.jpg);
+  background-image: url(../assets/descarga.jpg);
   height: 500px;
   width: 500px;
   display: -webkit-box;
@@ -298,12 +298,15 @@ li li {
 }
 
 .formulario {
-  max-width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -312,15 +315,31 @@ li li {
 
 .formulario .form__container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
   padding-top: 96px;
+  text-align: center;
+}
+
+.formulario .form__container h2 {
+  font-family: "Benne", serif;
+  color: #595844;
 }
 
 .formulario .form__container .form-label {
   color: #474739;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .formulario .form__container .form-control {
@@ -328,15 +347,25 @@ li li {
 }
 
 .formulario .btn {
-  border: 1px solid #73725E;
-  color: #73725E;
-  margin-bottom: 96px;
-}
-
-.formulario .btn:hover {
   background-color: #73725E;
   color: #fff;
   border: 1px solid #73725E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+}
+
+.formulario .btn:hover {
+  border: 1px solid #73725E;
+  color: #fff;
+  background-color: #595844;
 }
 
 .carousel-inner {
@@ -375,182 +404,6 @@ li li {
 @media only screen and (min-width: 961px) {
   body {
     background-color: #FBFCFC;
-  }
-}
-
-.contacto__titulo {
-  color: darkslategray;
-  font-size: 3.1rem;
-  font-weight: 300;
-  font-family: "Benne", serif;
-  margin-left: 3.1rem;
-  margin-top: 1.8rem;
-}
-
-.contactoSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: #C9C7AD;
-  margin-top: 4.3rem;
-  margin-bottom: 8rem;
-}
-
-.contactoSection .contacto__div {
-  text-align: center;
-  margin-top: 4.6rem;
-  margin-bottom: 4.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contactoSection .contacto__div .contactoLink {
-  margin-bottom: 2rem;
-  text-decoration: none;
-  color: darkslategray;
-  font-size: 1.2rem;
-  font-weight: 300;
-  font-family: "Benne", serif;
-}
-
-.contactoSection .formularioSuscribirse {
-  -webkit-transition: all 2s;
-  transition: all 2s;
-  width: 6.25rem;
-  margin: auto;
-  text-align: center;
-  margin-right: 9.3rem;
-}
-
-.contactoSection .formularioSuscribirse .formularioSuscribirse input:focus {
-  width: 9.3rem;
-  font-size: 1.25rem;
-}
-
-.contactoSection .formularioSuscribirse .botones {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-top: 15px;
-}
-
-.contactoSection .formularioSuscribirse .btn {
-  background-color: #CCB3A3;
-}
-
-.contactoSection .labelcheck {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 1.8rem;
-  margin-top: 4rem;
-}
-
-.contactoSection .labelcheck .labelForm {
-  color: darkslategray;
-  font-size: 15px;
-  font-size: 20px;
-  font-family: 'Benne', serif;
-  margin-right: 5px;
-}
-
-.banner .img-fluid {
-  margin-top: 30px;
-  width: 100%;
-  height: 18rem;
-}
-
-/*Mobile Styles */
-@media only screen and (max-width: 400px) {
-  .contactoSection {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100%;
-  }
-  .contactoSection .contacto__titulo {
-    margin-left: 0rem;
-    font-size: 2rem;
-  }
-  .contactoSection .contactoUl {
-    width: 40%;
-    margin-bottom: 7%;
-  }
-  .contactoSection .formularioSuscribirse {
-    width: 39%;
-    margin-top: 0%;
-  }
-  .contactoSection .labelcheck {
-    margin-bottom: 8%;
-  }
-  .banner .img-fluid {
-    height: 4rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  .contactoSection {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100%;
-  }
-  .contactoSection .contacto__titulo {
-    margin-left: 0rem;
-  }
-  .contactoSection .contactoUl {
-    width: 40%;
-    margin-bottom: 7%;
-  }
-  .contactoSection .formularioSuscribirse {
-    width: 39%;
-    margin-top: 0%;
-  }
-  .contactoSection .labelcheck {
-    margin-bottom: 8%;
   }
 }
 
@@ -753,187 +606,6 @@ li li {
   .section__velas .article__velas .nombrevela {
     font-size: 1.2rem;
     margin-top: 1.2rem;
-  }
-}
-
-.sectionhandmade {
-  margin-top: 3.1rem;
-}
-
-.sectionhandmade .titulohm {
-  font-family: "Benne", serif;
-  margin-top: 0.9rem;
-  color: darkslategray;
-  font-size: 1.25rem;
-}
-
-.sectionhandmade .titulohm .txthandmade {
-  margin-top: 5rem;
-  font-family: "Benne", serif;
-  font-style: italic;
-  color: darkslategray;
-  font-size: 1.5rem;
-  margin-left: 4.3rem;
-}
-
-.sectionhandmade .artichandmade {
-  background-color: #C9C7AD;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  border-color: white;
-  border-style: solid;
-  border-width: 2px;
-}
-
-.sectionhandmade .artichandmade .imghandmade {
-  width: 15rem;
-  height: 22rem;
-  margin-left: 1.25rem;
-  margin-right: 5rem;
-  margin-bottom: 1.8rem;
-  margin-top: 1.8rem;
-}
-
-.sectionhandmade2 {
-  margin-top: 1.5rem;
-}
-
-.sectionhandmade2 .artichandmade2 {
-  background-color: #C9C7AD;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border-color: white;
-  border-style: solid;
-  border-width: 2px;
-}
-
-.sectionhandmade2 .artichandmade2 .imghandmade2 {
-  width: 15rem;
-  height: 22rem;
-  margin-left: 3.1rem;
-  margin-right: 3.1rem;
-  margin-bottom: 1.8rem;
-  margin-top: 1.8rem;
-}
-
-.sectionhandmade2 .artichandmade2 .txthandmade2 {
-  margin-top: 5rem;
-  font-family: "Benne", serif;
-  font-style: italic;
-  color: darkslategray;
-  font-size: 1.5rem;
-  margin-left: 12.5rem;
-  margin-right: 3.1rem;
-}
-
-/*Mobile Styles */
-@media only screen and (max-width: 400px) {
-  /* handmade*/
-  .sectionhandmade .artichandmade {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    border-color: white;
-    border-style: solid;
-    border-width: 2px;
-  }
-  .sectionhandmade .artichandmade .imghandmade {
-    width: 80%;
-    margin-bottom: 1.8rem;
-    margin-top: 1.8rem;
-  }
-  .sectionhandmade .artichandmade .titulohm {
-    margin-bottom: 20%;
-  }
-  .sectionhandmade .artichandmade .titulohm .txthandmade {
-    margin-top: 5%;
-    font-size: 70%;
-  }
-  .sectionhandmade2 .artichandmade2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border-color: white;
-    border-style: solid;
-    border-width: 2px;
-  }
-  .sectionhandmade2 .artichandmade2 .imghandmade2 {
-    width: 80%;
-    margin-bottom: 1.8rem;
-    margin-top: 1.8rem;
-  }
-  .sectionhandmade2 .artichandmade2 .txthandmade2 {
-    margin-top: 0;
-    font-size: 80%;
-    margin-left: 20%;
-  }
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  .sectionhandmade .artichandmade {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    border-color: white;
-    border-style: solid;
-    border-width: 2px;
-  }
-  .sectionhandmade .artichandmade .imghandmade {
-    width: 80%;
-    margin-bottom: 1.8rem;
-    margin-top: 1.8rem;
-  }
-  .sectionhandmade .artichandmade .titulohm {
-    margin-bottom: 20%;
-  }
-  .sectionhandmade .artichandmade .titulohm .txthandmade {
-    margin-top: 5%;
-    font-size: 70%;
-  }
-  .sectionhandmade2 .artichandmade2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border-color: white;
-    border-style: solid;
-    border-width: 2px;
-  }
-  .sectionhandmade2 .artichandmade2 .imghandmade2 {
-    width: 80%;
-    margin-bottom: 1.8rem;
-    margin-top: 1.8rem;
-  }
-  .sectionhandmade2 .artichandmade2 .txthandmade2 {
-    margin-top: 0;
-    font-size: 80%;
-    margin-left: 20%;
   }
 }
 
