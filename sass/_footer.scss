@@ -4,11 +4,11 @@
       width: 100%;
       margin-top: 5rem;
       display: flex;
-      flex-direction: column;
+      
       justify-content: space-around;
       align-items: center;
     
-     .mail{
+     .info__footer{
       svg{
          fill: #73725E;
       }
@@ -30,31 +30,7 @@
       }
      }
 
-     .phone{
-      svg{
-         fill: #73725E;
-         
-      }
-      svg:hover{
-         fill: #474739;
-      }
-      h4{
-         font-size: 20px;
-         color: #474739;
-         padding-top: 15px;
-      }
-      a{
-         text-decoration: none;
-         color: #73725E;
-      }
-
-      a:hover{
-         color: #474739;
-      }
-     }
-
-     
-       
+ 
 }
 
 

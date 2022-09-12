@@ -319,6 +319,14 @@ li li {
   padding-top: 96px;
 }
 
+.formulario .form__container .form-label {
+  color: #474739;
+}
+
+.formulario .form__container .form-control {
+  border: 1px solid #73725E;
+}
+
 .formulario .btn {
   border: 1px solid #73725E;
   color: #73725E;
@@ -937,10 +945,6 @@ li li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -948,49 +952,26 @@ li li {
           align-items: center;
 }
 
-.footer .mail svg {
+.footer .info__footer svg {
   fill: #73725E;
 }
 
-.footer .mail svg:hover {
+.footer .info__footer svg:hover {
   fill: #474739;
 }
 
-.footer .mail h4 {
+.footer .info__footer h4 {
   font-size: 20px;
   color: #474739;
   padding-top: 15px;
 }
 
-.footer .mail a {
+.footer .info__footer a {
   text-decoration: none;
   color: #73725E;
 }
 
-.footer .mail a:hover {
-  color: #474739;
-}
-
-.footer .phone svg {
-  fill: #73725E;
-}
-
-.footer .phone svg:hover {
-  fill: #474739;
-}
-
-.footer .phone h4 {
-  font-size: 20px;
-  color: #474739;
-  padding-top: 15px;
-}
-
-.footer .phone a {
-  text-decoration: none;
-  color: #73725E;
-}
-
-.footer .phone a:hover {
+.footer .info__footer a:hover {
   color: #474739;
 }
 

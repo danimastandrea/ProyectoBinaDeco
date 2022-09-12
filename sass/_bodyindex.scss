@@ -136,8 +136,12 @@ height: 500px;
    justify-content: center;
    text-align: center;
    padding-top: 96px;
-   
-   
+   .form-label{
+    color: #474739;
+   }
+   .form-control{
+    border: 1px solid #73725E;
+   }
   }
   .btn{
     border: 1px solid #73725E;
