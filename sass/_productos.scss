@@ -1,21 +1,126 @@
 .sectionProd {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    padding-top: 5.5rem;
-    padding-bottom: 3.5rem;
-    background-color: #fff;
+    padding-top: 9rem;
+    padding-bottom: 1.5rem;
+    background-color: #f8f8f8;
     article{
       padding-top: 20px;
       margin-bottom: 20px;
-      .card{
-         .card-body{
-            background-color: rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .cards{
+         background: url(../assets/cuadrosx3.PNG);
+         transition: all 0.5s;
+         height: 350px;
+         width: 250px;
+         display: flex;
+        
+         flex-direction: column;
+         
+         text-align: center;
+    align-content: center;
+    justify-content: center;
+         h5{
+            display: none;
+            color: #fff;
          }
+         p{
+            display: none;
+            color: #fff;
+         }
+      }
+      .cards:hover{
+       transform: scale(1.1);
+       background-color: rgba(0, 0, 0, 0.3);
+       h5{
+         display: block;
+       }
+       p{
+         display: block;
+       }
       }
     }
     
-    
+    .article2{
+      padding-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .cards{
+         background: url(../assets/percherotiradores.JPG);
+         transition: all 0.5s;
+         height: 350px;
+         width: 250px;
+         display: flex;
+        
+         flex-direction: column;
+        
+         text-align: center;
+    align-content: center;
+    justify-content: center;
+         h5{
+            display: none;
+            color: #fff;
+         }
+         p{
+            display: none;
+            color: #fff;
+         }
+      }
+      .cards:hover{
+       transform: scale(1.1);
+       background-color: rgba(0, 0, 0, 0.3);
+       h5{
+         display: block;
+       }
+       p{
+         display: block;
+       }
+      }
+    }
        
+    .article3{
+      padding-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .cards{
+         background: url(../assets/vela1.jpg);
+         transition: all 0.5s;
+         height: 350px;
+         width: 250px;
+         display: flex;
+        
+         flex-direction: column;
+         
+         text-align: center;
+    align-content: center;
+    justify-content: center;
+         h5{
+            display: none;
+            color: #fff;
+         }
+         p{
+            display: none;
+            color: #fff;
+         }
+      }
+      .cards:hover{
+       transform: scale(1.1);
+       background-color: rgba(0, 0, 0, 0.3);
+       h5{
+         display: block;
+       }
+       p{
+         display: block;
+       }
+      }
+    }
     
       
 }

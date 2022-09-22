@@ -70,10 +70,15 @@ li li {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  text-transform: uppercase;
   font-size: 16px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fff;
   font-weight: 200;
+}
+
+.container-fluid .navbar-nav .nav-link:hover {
+  color: #D9D9D9;
 }
 
 .container-fluid .navbar-nav .dropdown-item {
@@ -411,20 +416,195 @@ li li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-top: 5.5rem;
-  padding-bottom: 3.5rem;
-  background-color: #fff;
+  padding-top: 9rem;
+  padding-bottom: 1.5rem;
+  background-color: #f8f8f8;
 }
 
 .sectionProd article {
   padding-top: 20px;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.sectionProd article .card .card-body {
-  background-color: rgba(0, 0, 0, 0.2);
+.sectionProd article .cards {
+  background: url(../assets/cuadrosx3.PNG);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 350px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sectionProd article .cards h5 {
+  display: none;
+  color: #fff;
+}
+
+.sectionProd article .cards p {
+  display: none;
+  color: #fff;
+}
+
+.sectionProd article .cards:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sectionProd article .cards:hover h5 {
+  display: block;
+}
+
+.sectionProd article .cards:hover p {
+  display: block;
+}
+
+.sectionProd .article2 {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sectionProd .article2 .cards {
+  background: url(../assets/percherotiradores.JPG);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 350px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sectionProd .article2 .cards h5 {
+  display: none;
+  color: #fff;
+}
+
+.sectionProd .article2 .cards p {
+  display: none;
+  color: #fff;
+}
+
+.sectionProd .article2 .cards:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sectionProd .article2 .cards:hover h5 {
+  display: block;
+}
+
+.sectionProd .article2 .cards:hover p {
+  display: block;
+}
+
+.sectionProd .article3 {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sectionProd .article3 .cards {
+  background: url(../assets/vela1.jpg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 350px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sectionProd .article3 .cards h5 {
+  display: none;
+  color: #fff;
+}
+
+.sectionProd .article3 .cards p {
+  display: none;
+  color: #fff;
+}
+
+.sectionProd .article3 .cards:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sectionProd .article3 .cards:hover h5 {
+  display: block;
+}
+
+.sectionProd .article3 .cards:hover p {
+  display: block;
 }
 
 /* SUBMENU velas y lamparas*/
