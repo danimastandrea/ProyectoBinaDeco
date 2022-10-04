@@ -5,7 +5,11 @@
 /* import secciones scss */
 .encabezado {
   margin-top: 0;
-  background-color: #73725E;
+  background-color: #fff;
+}
+
+.encabezado .carousel {
+  max-width: 1500px;
 }
 
 .encabezado .navbar {
@@ -88,64 +92,42 @@ li li {
 }
 
 /*Mobile Styles */
-@media only screen and (max-width: 400px) {
-  .navbar-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto;
+@media (max-width: 1000px) {
+  .encabezado .navbar .carousel-inner {
+    padding-top: 50px;
   }
-  .navbar-nav .nav-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    justify-items: center;
-    font-size: 20px;
-    padding-right: 10%;
+  .banner2 .banner {
+    max-width: 1000px;
   }
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  .navbar-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto;
+  .banner2 .banner .text {
+    width: 200px;
   }
-  .navbar-nav .nav-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    justify-items: center;
-    font-size: 20px;
-    padding-right: 10%;
+  .banner2 .banner .img {
+    width: 400px;
+    height: 150px;
   }
 }
 
 .prueba {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.prueba .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  margin: auto;
+  max-width: 1200px;
 }
 
-.prueba a {
+.prueba .container a {
   text-decoration: none;
 }
 
-.prueba a .card__shop {
+.prueba .container a .card__shop {
   background-image: url(../assets/descarga.jpg);
   height: 500px;
   width: 500px;
@@ -156,6 +138,7 @@ li li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: auto;
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -164,24 +147,24 @@ li li {
           justify-content: center;
 }
 
-.prueba a .card__shop h3 {
+.prueba .container a .card__shop h3 {
   font-size: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
   color: #595844;
 }
 
-.prueba a .card__shop p {
+.prueba .container a .card__shop p {
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #595844;
 }
 
-.prueba a {
+.prueba .container a {
   text-decoration: none;
 }
 
-.prueba .card__us {
+.prueba .container .card__us {
   background-image: url(../assets/us.jpg);
   height: 500px;
   width: 500px;
@@ -192,22 +175,23 @@ li li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+  margin: auto;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
-.prueba .card__us h3 {
+.prueba .container .card__us h3 {
   font-size: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
   color: #595844;
 }
 
-.prueba .card__us p {
+.prueba .container .card__us p {
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #595844;
@@ -261,6 +245,7 @@ li li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   padding-top: 50px;
 }
 
@@ -383,28 +368,6 @@ li li {
 
 /* modificacion mapa de carrusel*/
 /*Mobile Styles */
-@media only screen and (max-width: 400px) {
-  section {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  section {
-    width: 100%;
-    height: 100%;
-  }
-  .sectionHistoria .historia__article--parrafo {
-    font-size: 85%;
-    margin-right: 20%;
-  }
-  .sectionHistoria .imagen__historia {
-    margin-top: 40%;
-  }
-}
-
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   body {
@@ -563,7 +526,7 @@ li li {
 }
 
 .sectionProd .article3 .cards {
-  background: url(../assets/vela1.jpg);
+  background: url(../assets/lamparacubo.PNG);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   height: 350px;
