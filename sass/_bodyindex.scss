@@ -138,27 +138,29 @@ height: 500px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
-  .form__container{
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   padding-top: 96px;
-   text-align: center;
-  
-   h2{
-    font-family: $binafont;
-    color:#595844;
-  }
-   .form-label{
-    color: #474739;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   }
-   .form-control{
-    border: 1px solid #73725E;
-   }
+  .container{
+    max-width: 900px;
+    .form__container{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding-top: 96px;
+     text-align: center;
+    
+     h2{
+      font-family: $binafont;
+      color:#595844;
+    }
+     .form-label{
+      color: #474739;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+     .form-control{
+      border: 1px solid #73725E;
+     }
+    }
   }
   .btn{
     background-color: #73725E;
