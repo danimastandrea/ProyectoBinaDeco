@@ -97,6 +97,7 @@ height: 500px;
   display: flex;
  width: 100%;
    padding-top: 50px;
+
  
   .text{
     display: flex;
@@ -110,6 +111,7 @@ height: 500px;
     width: 70%;
     padding-left: 20px;
     padding-right: 20px;
+   
 
     h3{
       font-family: $binafont;
@@ -118,7 +120,7 @@ height: 500px;
     }
     p{
       font-family: $binafont;
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 
@@ -201,11 +203,138 @@ height: 500px;
 
 
 
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
- body {
- background-color: #FBFCFC;
- }
+
+@media (max-width: 961px) {
+  .prueba{
+  padding-top: 96px;
+    padding-bottom: 96px;
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 900px;
+
+  a{
+    text-decoration: none;
+ 
+   .card__shop{
+    background-image: url(../assets/descarga.jpg);
+    height: 400px;
+    width: 400px;
+   
+    margin-bottom: 40px;
+    h3{
+      font-size: 30px;
+      
+    }
+    p{
+      font-size: 15px;
+      
+    }
+
+   }
+  }
+
+ 
+   .card__us{
+    background-image: url(../assets/us.jpg);
+     height: 400px;
+    width: 400px;
+    display: flex;
+    
+    h3{
+      font-size: 30px;
+      
+    }
+    p{
+      font-size: 15px;
+     
+    }
+   }
+  }
+}
+
+.steps{
+  padding-bottom: 60px;
+  .steps__{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2{
+      margin-bottom: 60px;
+      font-family: $binafont;
+    }
+    .steps__icons{
+      display: flex;
+      flex-direction: column;
+     margin: auto;
+      svg{
+        fill: $bgsection;
+      }
+      p{
+        padding-top: 40px;
+        justify-content: space-around;
+      }
+    }
+
+  }
+}
+
+
+
+.banner2{
+ 
+ max-width: 100%;
+height: 500px;
+
+.banner{
+  display: flex;
+  flex-direction: column;
+ width: 80%;
+   padding-top: 20px;
+   padding-bottom: 30px;
+
+ 
+  .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: rgba(251, 252, 252, 0.8) ;
+    margin: auto;
+    height: 201px;
+    width: 70%;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+
+    h3{
+      font-family: $binafont;
+      text-transform: uppercase;
+      
+    }
+    p{
+      font-family: $binafont;
+      font-size: 14px;
+    }
+  }
+
+  .img{
+    height: 100px;  
+ 
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 600px;
+    
+    
+    
+  }
+}
+}
+
+
 }
 
 

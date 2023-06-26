@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* VARIABLES*/
 /*$bgbody: #FBFCFC;*/
 /*$bgsection: #F6F2E9;*/
@@ -209,7 +208,7 @@ li li {
 }
 .banner2 .banner .text p {
   font-family: "Benne", serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 .banner2 .banner .img {
   height: 250px;
@@ -269,278 +268,153 @@ li li {
 
 /* modificacion mapa de carrusel*/
 /*Mobile Styles */
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-  body {
-    background-color: #FBFCFC;
+@media (max-width: 961px) {
+  .prueba {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .prueba .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 900px;
+  }
+  .prueba .container a {
+    text-decoration: none;
+  }
+  .prueba .container a .card__shop {
+    background-image: url(../assets/descarga.jpg);
+    height: 400px;
+    width: 400px;
+    margin-bottom: 40px;
+  }
+  .prueba .container a .card__shop h3 {
+    font-size: 30px;
+  }
+  .prueba .container a .card__shop p {
+    font-size: 15px;
+  }
+  .prueba .container .card__us {
+    background-image: url(../assets/us.jpg);
+    height: 400px;
+    width: 400px;
+    display: flex;
+  }
+  .prueba .container .card__us h3 {
+    font-size: 30px;
+  }
+  .prueba .container .card__us p {
+    font-size: 15px;
+  }
+  .steps {
+    padding-bottom: 60px;
+  }
+  .steps .steps__ {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .steps .steps__ h2 {
+    margin-bottom: 60px;
+    font-family: "Benne", serif;
+  }
+  .steps .steps__ .steps__icons {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .steps .steps__ .steps__icons svg {
+    fill: #C9C7AD;
+  }
+  .steps .steps__ .steps__icons p {
+    padding-top: 40px;
+    justify-content: space-around;
+  }
+  .banner2 {
+    max-width: 100%;
+    height: 500px;
+  }
+  .banner2 .banner {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .banner2 .banner .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: rgba(251, 252, 252, 0.8);
+    margin: auto;
+    height: 201px;
+    width: 70%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .banner2 .banner .text h3 {
+    font-family: "Benne", serif;
+    text-transform: uppercase;
+  }
+  .banner2 .banner .text p {
+    font-family: "Benne", serif;
+    font-size: 14px;
+  }
+  .banner2 .banner .img {
+    height: 100px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 600px;
   }
 }
 .sectionProd {
+  padding-top: 150px;
+}
+.sectionProd .container {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  padding-top: 9rem;
-  padding-bottom: 1.5rem;
-  background-color: #f8f8f8;
-}
-.sectionProd article {
   padding-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 }
-.sectionProd article .cards {
-  background: url(../assets/cuadrosx3.PNG);
-  transition: all 0.5s;
-  height: 350px;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-content: center;
+.sectionProd .container .card {
+  background-color: #f1f1f1;
+  box-shadow: 7px 18px 53px -12px rgba(0, 0, 0, 0.55);
+}
+.sectionProd .container .card img {
+  max-height: 300px;
+}
+.sectionProd .container .card .card-body {
   justify-content: center;
-}
-.sectionProd article .cards h5 {
-  display: none;
-  color: #fff;
-}
-.sectionProd article .cards p {
-  display: none;
-  color: #fff;
-}
-.sectionProd article .cards:hover {
-  transform: scale(1.1);
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.sectionProd article .cards:hover h5 {
-  display: block;
-}
-.sectionProd article .cards:hover p {
-  display: block;
-}
-.sectionProd .article2 {
-  padding-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.sectionProd .article2 .cards {
-  background: url(../assets/percherotiradores.JPG);
-  transition: all 0.5s;
-  height: 350px;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
+  align-items: center;
+  margin: auto;
   text-align: center;
-  align-content: center;
-  justify-content: center;
 }
-.sectionProd .article2 .cards h5 {
-  display: none;
+.sectionProd .container .card .card-body .btn {
+  background-color: #73725e;
   color: #fff;
-}
-.sectionProd .article2 .cards p {
-  display: none;
-  color: #fff;
-}
-.sectionProd .article2 .cards:hover {
-  transform: scale(1.1);
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.sectionProd .article2 .cards:hover h5 {
-  display: block;
-}
-.sectionProd .article2 .cards:hover p {
-  display: block;
-}
-.sectionProd .article3 {
-  padding-top: 20px;
-  margin-bottom: 20px;
+  border: 1px solid #73725e;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.sectionProd .article3 .cards {
-  background: url(../assets/lamparacubo.PNG);
-  transition: all 0.5s;
-  height: 350px;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-content: center;
+  align-items: center;
   justify-content: center;
+  width: 200px;
 }
-.sectionProd .article3 .cards h5 {
-  display: none;
+.sectionProd .container .card .card-body .btn:hover {
+  border: 1px solid #73725e;
   color: #fff;
-}
-.sectionProd .article3 .cards p {
-  display: none;
-  color: #fff;
-}
-.sectionProd .article3 .cards:hover {
-  transform: scale(1.1);
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.sectionProd .article3 .cards:hover h5 {
-  display: block;
-}
-.sectionProd .article3 .cards:hover p {
-  display: block;
+  background-color: #595844;
 }
 
-/* SUBMENU velas y lamparas*/
-.section__velas {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 3.1rem;
-  background-color: #C9C7AD;
-  border-color: rgb(255, 255, 255);
-  border-style: solid;
-  border-width: 0.1rem;
-}
-.section__velas .article__velas {
-  border-radius: 1.25rem;
-  border-color: rgb(255, 255, 255);
-  border-style: solid;
-  border-width: 2px;
-}
-.section__velas .article__velas .imagenvela {
-  width: 15rem;
-  height: 22rem;
-  transition: all 2s;
-  border-radius: 1.25rem;
-}
-.section__velas .article__velas .imagenvela:hover {
-  padding: 1.25rem;
-  width: 21.8rem;
-  height: 28.1rem;
-}
-.section__velas .article__velas .nombrevela {
-  font-family: "Benne", serif;
-  font-size: 1.25rem;
-  justify-content: center;
-  margin-top: 1.25rem;
-  justify-items: center;
-  display: flex;
-}
-
-.sectiontabla {
-  margin-top: 5rem;
-  margin-bottom: 2.5rem;
-  background-color: #C9C7AD;
-}
-.sectiontabla .tablaProducto {
-  font-family: "Benne", serif;
-  font-style: italic;
-  font-size: 15px;
-  margin-left: 65px;
-}
-
-/*Mobile Styles */
-@media only screen and (max-width: 400px) {
-  .sectionProd {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .sectionProd .articleProd .imagenProducto img {
-    width: 85%;
-    transition: all 2s;
-  }
-  .sectionProd .articleProd .imagenProducto img:hover {
-    width: 100%;
-  }
-  .sectionProd .articleProd .descripcionProducto {
-    margin-top: 1.25rem;
-    font-family: "Benne", serif;
-    font-size: "Benne", serif-1px;
-  }
-  /*velas y lámparas*/
-  .section__velas {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .section__velas .article__velas {
-    border-radius: 1.2rem;
-    border-color: rgb(255, 255, 255);
-    border-style: solid;
-    border-width: 0.1rem;
-  }
-  .section__velas .article__velas .imagenvela {
-    width: 85%;
-    transition: all 2s;
-  }
-  .section__velas .article__velas .imagenvela:hover {
-    padding: 1.2rem;
-    width: 100%;
-  }
-  .section__velas .article__velas .nombrevela {
-    font-size: 1.2rem;
-    margin-top: 1.2rem;
-  }
-  .tablaProducto {
-    display: none;
-  }
-}
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  .sectionProd {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .sectionProd .articleProd .imagenProducto img {
-    width: 85%;
-    transition: all 2s;
-  }
-  .sectionProd .articleProd .imagenProducto img:hover {
-    width: 100%;
-  }
-  .sectionProd .articleProd .descripcionProducto {
-    margin-top: 1.25rem;
-    font-family: "Benne", serif;
-    font-size: "Benne", serif-1px;
-  }
-  /*velas y lámparas*/
-  .section__velas {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .section__velas .article__velas {
-    border-radius: 1.2rem;
-    border-color: rgb(255, 255, 255);
-    border-style: solid;
-    border-width: 0.1rem;
-  }
-  .section__velas .article__velas .imagenvela {
-    width: 85%;
-    transition: all 2s;
-  }
-  .section__velas .article__velas .imagenvela:hover {
-    padding: 1.2rem;
-    width: 100%;
-  }
-  .section__velas .article__velas .nombrevela {
-    font-size: 1.2rem;
-    margin-top: 1.2rem;
-  }
-}
 .footer {
   background-color: #C9C7AD;
-  height: 18rem;
+  height: 15rem;
   width: 100%;
   margin-top: 5rem;
 }
 .footer .container {
   display: flex;
-  padding-top: 5rem;
+  padding-top: 3.5rem;
   justify-content: space-around;
   align-items: center;
 }
